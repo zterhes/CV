@@ -1,5 +1,4 @@
 {
-  "homepage": "http://zterhes.github.io/cv",
   "name": "cv",
   "version": "0.1.0",
   "private": true,
@@ -23,9 +22,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "i18n": "i18next-scanner",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "i18n": "i18next-scanner"
   },
   "eslintConfig": {
     "extends": [
