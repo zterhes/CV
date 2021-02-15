@@ -10,12 +10,16 @@ justify-content:center;
 align-items:center;
 `
 
+const StyledLink=styled(Link)`
+color: white;
+text-decoration:none;
+`
 export default ({ link, children }) => {
     return (
-            <Link to={link}>
+            <StyledLink to={link}>
                 <Component>
                     <p>{children}</p>
                 </Component>
-            </Link>
+            </StyledLink>
     );
 }
