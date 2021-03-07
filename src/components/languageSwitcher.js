@@ -12,8 +12,8 @@ const SwitchLanguage = () => {
 
   return (
       <div class="btn-group" role="group">
-      <button type="button" className="btn btn-secondary" value="hu" onClick={handleClick}>🇭🇺</button>
-      <button type="button" className="btn btn-secondary" value="en" onClick={handleClick}>🇬🇧</button>
+      <button type="button" className="btn btn-dark" value="hu" onClick={handleClick}>🇭🇺</button>
+      <button type="button" className="btn btn-dark" value="en" onClick={handleClick}>🇬🇧</button>
     </div>
   );
 };
