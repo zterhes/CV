@@ -12,9 +12,11 @@ display:flex;
 flex-direction:column;
 justify-content:space-around;
 align-items:center;
-background-color:grey;
+background-color:rgba(0, 0,0, 0.6);
 height:100%;
+border-radius:30px;
 font-size:1vw;
+box-shadow:6px 6px 3px rgba(0,0,0,0.71);
 `
 
 const ProfilePic = styled.img`
