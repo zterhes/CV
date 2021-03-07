@@ -9,7 +9,7 @@ import Menu from "./components/menu";
 import styled from "styled-components";
 
 import Home from "./pages/home";
-
+import Educations from './pages/educations'
 const Page = styled.div`
 display:flex;
 width:100vw;
@@ -17,11 +17,14 @@ height:100vh;
 `
 
 const MenuDiv = styled.div`
+position:fixed;
+align-self:center;
 width:10vw;
-height: 100vh;
+height: 50vh;
+margin-left:1vw;
 `
 const ContentDiv = styled.div`
-width:90vw;
+width:100vw;
 height:100vh;
 `
 
@@ -30,12 +33,15 @@ function App() {
     <Router>
       <Page>
         <MenuDiv>
-          <Menu></Menu>
+          <Menu/>
         </MenuDiv>
         <ContentDiv>
           <Switch>
             <Route exact path='/'>
-              <Home></Home>
+              <Home/>
+            </Route>
+            <Route exact path='/educations'>
+              <Educations/>
             </Route>
           </Switch>
         </ContentDiv>
