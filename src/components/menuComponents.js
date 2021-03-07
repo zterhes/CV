@@ -1,25 +1,17 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-
-const Component = styled.div`
-display:flex;
-color:white;
-justify-content:center;
-align-items:center;
-`
-
-const StyledLink=styled(Link)`
-color: white;
+const StyledLink = styled(NavLink)`
+text-align:center;
 text-decoration:none;
+color:white;
+width:100%;
 `
 export default ({ link, children }) => {
     return (
-            <StyledLink to={link}>
-                <Component>
-                    <p>{children}</p>
-                </Component>
-            </StyledLink>
+        <StyledLink exact to={link} activeClassName="text-dark bg-white">
+            <div>{children}</div>
+        </StyledLink>
     );
 }
