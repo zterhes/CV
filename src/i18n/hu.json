@@ -1,9 +1,15 @@
 {
+  "age": "Kor",
   "contacts": "Kapcsolat",
+  "educations": "Képzések",
   "juniorfrontenddeveloper": "Junior FullStack Fejlesztő",
+  "location": "Lakhely",
+  "locationData": "Szeged, Magyarország",
   "mainpage": "Főoldal",
+  "profile": "Profil",
   "referencies": "Referenciák",
   "resume": "Önéletrajz",
   "technologies": "Technológiák",
-  "terheszoran": "Terhes Zorán"
+  "terheszoran": "Terhes Zorán",
+  "text": "Proaktív és motivált. Izgatatott vagyok ,hogy az új, webfejlesztői karrierem kapujában állok."
 }

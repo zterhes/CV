@@ -1,9 +1,15 @@
 {
+  "age": "Age",
   "contacts": "Contacts",
+  "educations": "Educations",
   "juniorfrontenddeveloper": "Junior FullStack Developer",
+  "location": "Education",
+  "locationData": "Szeged, Hungary",
   "mainpage": "Main Page",
+  "profile": "Profile",
   "referencies": "Referencies",
   "resume": "Resume",
   "technologies": "Technologies",
-  "terheszoran": "Zoran Terhes"
+  "terheszoran": "Zoran Terhes",
+  "text": "Proactive and motivated. I’m excited to be at the gates of my new web development career."
 }
