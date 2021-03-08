@@ -1,12 +1,9 @@
 {
   "contacts": "Contacts",
-  "educations": "Educations",
-  "experiencies": "Experiencies",
-  "juniorfrontenddeveloper": "Junior FullStack Develeper",
+  "juniorfrontenddeveloper": "Junior FullStack Developer",
   "mainpage": "Main Page",
-  "skills": "Skills",
-  "terheszoran": "Zoran Terhes",
-  "work": {
-    "history": "Work History"
-  }
+  "referencies": "Referencies",
+  "resume": "Resume",
+  "technologies": "Technologies",
+  "terheszoran": "Zoran Terhes"
 }

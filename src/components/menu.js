@@ -35,10 +35,9 @@ export default () => {
             <LanguageSwitcher></LanguageSwitcher>
             <ProfilePic src={profile}></ProfilePic>
             <MenuComponents link="/">{t("mainpage")}</MenuComponents>
-            <MenuComponents link="/educations">{t("educations")}</MenuComponents>
-            <MenuComponents link="/experience">{t("experiencies")}</MenuComponents>
-            <MenuComponents link="/work">{t("work.history")}</MenuComponents>
-            <MenuComponents link="/skills">{t("skills")}</MenuComponents>
+            <MenuComponents link="/resume">{t("resume")}</MenuComponents>
+            <MenuComponents link="/technologies">{t("technologies")}</MenuComponents>
+            <MenuComponents link="/referencies">{t("referencies")}</MenuComponents>
             <MenuComponents link="/contacts">{t("contacts")}</MenuComponents>
         </Page>
     );

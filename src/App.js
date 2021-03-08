@@ -9,7 +9,10 @@ import Menu from "./components/menu";
 import styled from "styled-components";
 
 import Home from "./pages/home";
-import Educations from './pages/educations'
+import Resume from './pages/resume'
+
+
+
 const Page = styled.div`
 display:flex;
 width:100vw;
@@ -40,8 +43,8 @@ function App() {
             <Route exact path='/'>
               <Home/>
             </Route>
-            <Route exact path='/educations'>
-              <Educations/>
+            <Route exact path='/resume'>
+              <Resume/>
             </Route>
           </Switch>
         </ContentDiv>
