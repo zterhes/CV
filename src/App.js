@@ -20,8 +20,9 @@ height:100vh;
 `
 
 const MenuDiv = styled.div`
-position:fixed;
+position: fixed;
 align-self:center;
+z-index:10;
 width:10vw;
 height: 50vh;
 margin-left:1vw;

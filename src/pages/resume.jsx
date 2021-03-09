@@ -3,34 +3,42 @@ import styled from "styled-components";
 import backgroundPic from "../img/chip.jpg"
 import { useTranslation } from "react-i18next";
 import PageStyle from "../components/styleComponents/Page";
-import ShadowText from '../components/styleComponents/shadowText'
 import { ContentDiv } from '../components/styleComponents/styleHolder'
 import diplom from '../img/oklevel.jpg'
+import Title from '../components/Titel';
 
 
-const TitleDiv = styled.div`
-display:flex;
-background-color:transparent;
-width:100vw;
-height:100vh;
-justify-content:center;
-align-items:center;
-`
+
 
 const Img = styled.img`
 height:50vh;
 `
 
 const SmallTitle = styled.p`
+text-align:center;
 font-size:30px;
 font-weight:bold;
 `
 
-const ContentInlineDiv = styled.div`
+const Wrapper = styled.div`
 display:flex;
-justify-content:space-between;
+justify-content:space-evenly;
+width:100%;
+margin-left:30px;
 `
 
+const ListContentDiv = styled.div`
+margin-bottom:30px ;
+margin-right:80px;
+`
+
+const ListContentHeader = styled.h4`
+text-decoration:underline;
+`
+
+const ListContentText = styled.h6`
+padding-left:1rem;
+`
 
 
 const Resume = () => {
@@ -50,12 +58,10 @@ const Resume = () => {
 
     return (
         <PageStyle url={backgroundPic}>
-            <TitleDiv>
-                <ShadowText textSize="10rem">{t("profile")}</ShadowText>
-            </TitleDiv>
+            <Title>{t("profile")}</Title>
             <div>
                 <ContentDiv>
-                    <div>
+                    <div >
                         <h1>{t("terheszoran")}</h1>
                     </div>
                     <div className="text-center">
@@ -71,9 +77,7 @@ const Resume = () => {
                     </div>
                 </ContentDiv>
             </div>
-            <TitleDiv>
-                <ShadowText textSize="10rem">{t("educations")}</ShadowText>
-            </TitleDiv>
+            <Title>{t("educations")}</Title>
             <div>
                 <ContentDiv>
                     <div className="text-center">
@@ -81,12 +85,62 @@ const Resume = () => {
                         <h2>Flow Academy Szeged</h2>
                         <h2>2020-2021</h2>
                     </div>
-                    <ContentInlineDiv>
+                    <Wrapper>
                         <div>
                             <SmallTitle>5 hónapos 800 órás Full Stack Webfejlesztő képzés</SmallTitle>
+                            <h3 className="text-center mb-5">Elsajátított készségek: </h3>
+                            <Wrapper>
+                                <div>
+                                    <ListContentDiv>
+                                        <ListContentHeader>Programnyelvek</ListContentHeader>
+                                        <ListContentText>- JavaScript</ListContentText>
+                                        <ListContentText>- Java</ListContentText>
+                                    </ListContentDiv>
+                                    <ListContentDiv>
+                                        <ListContentHeader>Fejlesztési módszertanok</ListContentHeader>
+                                        <ListContentText>- Verziókezelés - GIT</ListContentText>
+                                        <ListContentText>- Kódszerkesztők (Microsoft VS Code, Intellij IDEA</ListContentText>
+                                        <ListContentText>- Parancssori ismeretek (alapvető Linox/POSIX parancsok)</ListContentText>
+                                        <ListContentText>- Hálózati ismeretek(OSI modell, HTTP, SSH)</ListContentText>
+                                        <ListContentText>- Tesztelés(manuális/automata tesztelés)</ListContentText>
+                                    </ListContentDiv>
+                                    <ListContentDiv>
+                                        <ListContentHeader>Frontend fejlesztés</ListContentHeader>
+                                        <ListContentText>- Sitebuilding (HTML, CSS)</ListContentText>
+                                        <ListContentText>- React frontend keretrendszer</ListContentText>
+                                    </ListContentDiv>
+                                    <ListContentDiv>
+                                        <ListContentHeader>Backend fejlesztés</ListContentHeader>
+                                        <ListContentText>- Spring framework és Spring Boot</ListContentText>
+                                    </ListContentDiv>
+                                </div>
+                                <div>
+                                    <ListContentDiv>
+                                        <ListContentHeader>Adminisztratív eszközök használata</ListContentHeader>
+                                        <ListContentText>- Dokumentáció és projekt-kezelő eszközök - GitHub</ListContentText>
+                                        <ListContentText>- Swagger API dokumentáció</ListContentText>
+                                        <ListContentText>- Projekt menedzsment módszerek (Agile)</ListContentText>
+                                        <ListContentText>- Kommunikációs eszközök(Slack, Skype, Teams)</ListContentText>
+                                    </ListContentDiv>
+                                    <ListContentDiv>
+                                        <ListContentHeader>Soft Skills és Karriermenedzsment</ListContentHeader>
+                                        <ListContentText>- A kommunikáció alapjai</ListContentText>
+                                        <ListContentText>- Vállalati kultúra</ListContentText>
+                                        <ListContentText>- Céges kommunikáció</ListContentText>
+                                        <ListContentText>- Flow</ListContentText>
+                                        <ListContentText>- Konfliktuskezelés</ListContentText>
+                                        <ListContentText>- Asszertív kommunikáció</ListContentText>
+                                        <ListContentText>- FeedBack</ListContentText>
+                                        <ListContentText>- Prezentációs technikák</ListContentText>
+                                        <ListContentText>- DISC</ListContentText>
+                                        <ListContentText>- Brainstorming</ListContentText>
+                                        <ListContentText>- CV készítés és állásinterjú</ListContentText>
+                                    </ListContentDiv>
+                                </div>
+                            </Wrapper>
                         </div>
                         <Img src={diplom} />
-                    </ContentInlineDiv>
+                    </Wrapper>
                 </ContentDiv>
             </div>
         </PageStyle>
