@@ -7,8 +7,9 @@ flex-direction:column;
 justify-content:space-evenly;
 align-items:center;
 background:url(${backgroundPic});
-height: 100vh;
 width:100vw;
+padding-top:50px;
+padding-bottom:50px;
 color:white;
 clip-path: polygon(0 0, 100% 6%, 100% 100%, 0 94%);
 `
