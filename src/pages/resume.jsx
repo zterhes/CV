@@ -58,7 +58,7 @@ const Resume = () => {
 
     return (
         <PageStyle url={backgroundPic}>
-            <Title>{t("profile")}</Title>
+            <Title height="100vh">{t("profile")}</Title>
             <div>
                 <ContentDiv>
                     <div className="my-4">
@@ -77,7 +77,7 @@ const Resume = () => {
                     </div>
                 </ContentDiv>
             </div>
-            <Title>{t("educations")}</Title>
+            <Title height="100vh">{t("educations")}</Title>
             <div>
                 <ContentDiv>
                     <div className="text-center">
@@ -143,7 +143,7 @@ const Resume = () => {
                     </Wrapper>
                 </ContentDiv>
             </div>
-            <Title>{t("workExperience")}</Title>
+            <Title height="100vh">{t("workExperience")}</Title>
             <div>
                 <ContentDiv>
                     <div className="text-center">
