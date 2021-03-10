@@ -23,9 +23,9 @@ import { ReactComponent as DockerIcon } from '../img/icons/docker.svg';
 const ToolsDiv = styled.div`
 display:flex;
 justify-content:space-between;
-height: 130px;
+height: 180px;
 padding-left:300px;
-padding-top:30px;
+padding-top:40px;
 `
 
 const Paged = styled(Page)`
