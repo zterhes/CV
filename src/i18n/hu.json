@@ -1,15 +1,27 @@
 {
+  "Authenticity Assistant and Service Coordinator": "Eredetiségvizsgáló asszisztens és szervízkoordinátor",
+  "Executive Director": "Ügyvezető igazgató",
+  "Germany": "Németország",
+  "Hungary": "Magyarország",
+  "Site manager": "Telephelyvezető",
   "age": "Kor",
+  "clinical secunder transport": "klinikai secundertransport",
   "contacts": "Kapcsolat",
+  "coordination of the work of a car repair shop, procurement of materials, recruitment, performance of origin verification assistant tasks": "gépjárműjavítóműhely munkájának koordinálása, anyagbeszerzés, munkafelvétel, eredtvizsgáló asszisztensi feladatok ellátása",
   "educations": "Képzések",
+  "full range of executive responsibilities, customer communication": "teljeskörű ügyvezetői feladatok, ügyfélkommunikáció",
   "juniorfrontenddeveloper": "Junior FullStack Fejlesztő",
   "location": "Lakhely",
   "locationData": "Szeged, Magyarország",
   "mainpage": "Főoldal",
+  "motor vehicle repair and trade, clinical secunder transport": "gépjárműjavítás és kereskedelem, klinikai secundertransport",
   "profile": "Profil",
   "referencies": "Referenciák",
   "resume": "Önéletrajz",
   "technologies": "Technológiák",
   "terheszoran": "Terhes Zorán",
-  "text": "Proaktív és motivált. Izgatatott vagyok ,hogy az új, webfejlesztői karrierem kapujában állok."
+  "text": "Proaktív és motivált. Izgatatott vagyok ,hogy az új, webfejlesztői karrierem kapujában állok.",
+  "vehicle maintenance, HR coordination, transport logistics": "gépjárművek karbantartása, HR koordináció, szállítási logisztika",
+  "workExperience": "Szakmai tapasztalat",
+  "workers' hostel operation at several sites": "munkásszálló üzemeltetés több telephelyen"
 }
