@@ -61,18 +61,18 @@ const Resume = () => {
             <Title>{t("profile")}</Title>
             <div>
                 <ContentDiv>
-                    <div >
+                    <div className="my-4">
                         <h1>{t("terheszoran")}</h1>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center my-4">
                         <h3>{t("age")}</h3>
                         <h3>{age}</h3>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center my-4">
                         <h3>{t("location")}</h3>
                         <h3>{t("locationData")}</h3>
                     </div>
-                    <div className="text-center">
+                    <div className="text-center my-4">
                         <h3>{t("text")}</h3>
                     </div>
                 </ContentDiv>
@@ -141,6 +141,37 @@ const Resume = () => {
                         </div>
                         <Img src={diplom} />
                     </Wrapper>
+                </ContentDiv>
+            </div>
+            <Title>{t("workExperience")}</Title>
+            <div>
+                <ContentDiv>
+                    <div className="text-center">
+                        <ListContentDiv>
+                            <ListContentHeader>{t("Executive Director")}</ListContentHeader>
+                            <ListContentText>RT Immobilien GmbH.| {t("Germany")} |2017 - 2021 </ListContentText>
+                            <ListContentText>- {t("workers' hostel operation at several sites")}</ListContentText>
+                            <ListContentText>- {t("full range of executive responsibilities, customer communication")}</ListContentText>
+                        </ListContentDiv>
+                        <ListContentDiv>
+                            <ListContentHeader>{t("Executive Director")}</ListContentHeader>
+                            <ListContentText>Maros Sped Trans Kft.| {t("Hungary")} | 2012 - 2018</ListContentText>
+                            <ListContentText>- {t("motor vehicle repair and trade, clinical secunder transport")}</ListContentText>
+                            <ListContentText>- {t("vehicle maintenance, HR coordination, transport logistics")}</ListContentText>
+                        </ListContentDiv>
+                        <ListContentDiv>
+                            <ListContentHeader>{t("Site manager")}</ListContentHeader>
+                            <ListContentText>Maros Sped Kft. | {t("Hungary")} | 2010 - 2012</ListContentText>
+                            <ListContentText>- {t("clinical secunder transport")}</ListContentText>
+                            <ListContentText>- {t("vehicle maintenance, HR coordination, transport logistics")}</ListContentText>
+                        </ListContentDiv>
+                        <ListContentDiv>
+                            <ListContentHeader>{t("Authenticity Assistant and Service Coordinator")}</ListContentHeader>
+                            <ListContentText>Bavaria-Szeged Bt.| {t("Hungary")} | 2009 - 2010</ListContentText>
+                            <ListContentText>- {t("clinical secunder transport")}</ListContentText>
+                            <ListContentText>- {t("coordination of the work of a car repair shop, procurement of materials, recruitment, performance of origin verification assistant tasks")}</ListContentText>
+                        </ListContentDiv>
+                    </div>
                 </ContentDiv>
             </div>
         </PageStyle>
