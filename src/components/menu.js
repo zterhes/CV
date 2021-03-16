@@ -37,7 +37,6 @@ export default () => {
             <MenuComponents link="/">{t("mainpage")}</MenuComponents>
             <MenuComponents link="/resume">{t("resume")}</MenuComponents>
             <MenuComponents link="/technologies">{t("technologies")}</MenuComponents>
-            <MenuComponents link="/referencies">{t("referencies")}</MenuComponents>
             <MenuComponents link="/contacts">{t("contacts")}</MenuComponents>
         </Page>
     );

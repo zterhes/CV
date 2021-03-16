@@ -11,6 +11,7 @@ import styled from "styled-components";
 import Home from "./pages/home";
 import Resume from './pages/resume'
 import Technologies from './pages/technologies'
+import Contacts from './pages/contact'
 
 
 
@@ -50,6 +51,9 @@ function App() {
             </Route>
             <Route exact path='/technologies'>
               <Technologies/>
+            </Route>
+            <Route exact path='/contacts'>
+              <Contacts/>
             </Route>
           </Switch>
         </ContentDiv>

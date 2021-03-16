@@ -34,6 +34,7 @@ align-items:center;
 justify-content:center;
 `
 
+
 const Technologies = () => {
     const { t } = useTranslation()
     return (
