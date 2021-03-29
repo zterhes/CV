@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Link } from 'react-router-dom';
 import ShadowText from './styleComponents/shadowText'
+import ContactModal from './ContactModal';
 
 
 const MyButton = styled.button`
@@ -23,13 +24,24 @@ box-shadow: 6px 6px 3px rgba(0,0,0,0.71);
 
 const HireButton = () => {
     const { t } = useTranslation()
-    return (
+    const [modalIsOpen,setModalIsOpen]=useState(false)
 
-        <Link to="/contacts">
-            <MyButton>
+const closeModal = ()=>{
+    setModalIsOpen(false)
+}
+
+    return (
+        <>
+            <MyButton onClick={()=>setModalIsOpen(true)}>
+                {console.log(`modalIsOpen`, modalIsOpen)}
                 <ShadowText>{t("hireButton")}</ShadowText>
             </MyButton>
-        </Link>
+            <ContactModal
+            isOpen={modalIsOpen}
+            closeModal={closeModal}
+            contentLabel="Example Modal"
+            />
+            </>
     );
 }
 

@@ -11,7 +11,7 @@ import styled from "styled-components";
 import Home from "./pages/home";
 import Resume from './pages/resume'
 import Technologies from './pages/technologies'
-import Contacts from './pages/contact'
+import ContactModal from './components/ContactModal'
 
 
 
@@ -53,7 +53,7 @@ function App() {
               <Technologies/>
             </Route>
             <Route exact path='/contacts'>
-              <Contacts/>
+              <ContactModal/>
             </Route>
           </Switch>
         </ContentDiv>

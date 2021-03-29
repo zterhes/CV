@@ -1,5 +1,13 @@
 import styled from "styled-components";
 import backgroundPic from '../../img/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg'
+import { NavLink } from "react-router-dom";
+
+export const StyledLink = styled(NavLink)`
+text-align:center;
+text-decoration:none;
+color:white;
+width:100%;
+`
 
 export const ContentDiv = styled.div`
 display:flex;
