@@ -1,9 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from "styled-components";
 import MenuComponents from "./menuComponents";
 import profile from "../img/profile.jpg"
 import LanguageSwitcher from "./languageSwitcher";
 import { useTranslation } from "react-i18next";
+import ContactModal from './ContactModal';
+
 
 
 
@@ -23,13 +25,25 @@ const ProfilePic = styled.img`
 width:70%;
 border-radius:50%;
 border:1px solid white;
+`
 
+const ContactDiv = styled.div`
+text-align:center;
+text-decoration:none;
+color:white;
+width:100%;
 `
 
 
 
 export default () => {
     const { t } = useTranslation();
+    const [modalIsOpen, setModalIsOpen] = useState(false)
+
+    const closeModal = () => {
+        setModalIsOpen(false)
+    }
+
     return (
         <Page>
             <LanguageSwitcher></LanguageSwitcher>
@@ -37,7 +51,12 @@ export default () => {
             <MenuComponents link="/">{t("mainpage")}</MenuComponents>
             <MenuComponents link="/resume">{t("resume")}</MenuComponents>
             <MenuComponents link="/technologies">{t("technologies")}</MenuComponents>
-            <MenuComponents link="/contacts">{t("contacts")}</MenuComponents>
+            <ContactDiv onClick={() => setModalIsOpen(true)} >{t("contacts")}</ContactDiv>
+            <ContactModal
+                isOpen={modalIsOpen}
+                closeModal={closeModal}
+                contentLabel="Example Modal"
+            />
         </Page>
     );
 }
